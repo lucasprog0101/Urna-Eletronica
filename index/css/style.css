@@ -1,0 +1,216 @@
+:root{
+ --cor-branco: #fff;
+ --cor-preto: #000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    background-color: blanchedalmond;
+    width: 37.5pc;
+    height: 135pc;
+}
+
+/* painel */
+#painel{
+    background: linear-gradient(to right, #6E6E6E, #7D7D7D);
+    width: 35.5pc;
+    height: 33pc;
+    margin-top: 49pc;
+    margin-left: 0.8pc;
+}
+
+#digitos{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 33pc;
+}
+
+.numero{
+    width: 5pc;
+    height: 6pc;
+    border: 6px solid #000;
+    margin-left: 1pc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.nulo{
+    font-size: 3.6em;
+    position: relative;
+    left: 3pc;
+    top: 181px;
+    text-shadow: 8px 3px 3px #000;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes pisca {
+    0%{
+        opacity: 0.5;
+    }
+
+    50%{
+        opacity: 0.9;
+    }
+
+    100%{
+        opacity: 0.5;
+    }
+}
+
+#info_candidatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 27pc;
+}
+
+#titulo_candidato{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    margin-top: 5pc;
+    font-family: 'Gideon Roman',
+    cursive;
+}
+
+#info_candidatos img{
+   width: 200px;
+   margin-bottom: 1pc;
+}
+
+#quebra_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.p{
+   font-size: 1.8em;
+   font-family: 'Source Sans Pro',
+   sans-serif;
+}
+/* teclado */
+#teclado{
+  display: flex;
+  align-items: center;
+  margin-top: 2pc;
+  flex-direction: column;
+}
+
+.coluna{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 1pc;
+}
+
+.teclado_botao{
+    background: linear-gradient(to right, #000, #1b1b1b);
+    width: 65px;
+    height: 65px;
+    color: var(--cor-branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid #575353;
+    cursor: pointer;
+}
+
+.coluna_02{
+    position: relative;
+    left: 4pc;
+}
+
+.button{
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.corrigir{
+    background-color: rgb(255, 0, 0);
+    color: var(--cor-branco);
+    text-shadow: 3px 2px 3px var(--cor-preto);
+}
+
+.branco {
+    color: var(--cor-preto);
+}
+
+.enviar {
+    background-color: darkgreen;
+    color: var(--cor-branco);
+    text-shadow: 3px 2px 3px var(--cor-preto);
+}
+
+/* informações do politico para votar */
+#codigos_politicos{
+    margin-top: 1pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 37.5pc;
+    text-transform: capitalize;
+}
+
+#titulo_info_codigo{
+    font-size: 2em;
+    margin-bottom: 1pc;
+    /* display: flex;
+    justify-content: center; */
+    font-family: 'Gideon Roman',
+    cursive;
+}
+
+.coluna_politica{
+    border-bottom: 4px solid var(--cor-preto);
+    margin-bottom: 15px;
+    width: 32pc;
+    margin-left: 2pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coluna_politica:nth-child(5){
+    margin-bottom: 0;
+}
+
+
+.h4{
+    font-size: 1.5em;
+}

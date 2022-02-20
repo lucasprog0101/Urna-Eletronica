@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/responsividade.css">
+    <title>Urna Eletronica</title>
+</head>
+<body>
+    <main>
+        <section id="painel">
+            <div id="digitos">
+               <div class="numero pisca inicio"></div>
+               <div class="numero"></div>
+               <div class="numero"></div>
+            </div>
+
+            <div id="info_candidatos">
+                <h3 id="titulo_candidato"></h3>
+                <img src="" alt="">
+                <div id="quebra_texto">
+                    <p class="p"></p>
+                    <p class="p"></p>
+                    <p class="p"></p>
+                    <p class="p"></p>
+                </div>
+            </div>
+
+            
+        </section>
+        <section id="teclado">
+            <div class="coluna coluna_01">
+                <div class="teclado_botao" onclick="sistemaDeVotacao('1')">1</div>
+                <div class="teclado_botao" onclick="sistemaDeVotacao('2')">2</div>
+                <div class="teclado_botao" onclick="sistemaDeVotacao('3')">3</div>
+                <div class="teclado_botao" onclick="sistemaDeVotacao('4')">4</div>
+                <div class="teclado_botao" onclick="sistemaDeVotacao('5')">5</div>
+                <div class="teclado_botao" onclick="sistemaDeVotacao('6')">6</div>
+                <div class="teclado_botao" onclick="sistemaDeVotacao('7')">7</div>
+                <div class="teclado_botao" onclick="sistemaDeVotacao('8')">8</div>
+                <div class="teclado_botao" onclick="sistemaDeVotacao('9')">9</div>
+                <div class="coluna teclado_botao coluna_02" onclick="sistemaDeVotacao('0')">0</div>
+            </div>
+            
+            <div>
+                <button class="corrigir button">corrigir</button>
+                <button class="branco button">branco</button>
+                <button class="enviar button">enviar</button>
+            </div>
+
+        </section>
+
+        <section id="codigos_politicos">
+            <h3 id="titulo_info_codigo">informações do politico para votar</h3>
+           <div class="coluna_politica">
+               <h4 class="h4">Nome: julios</h4>
+               <h4 class="h4">cargo: presidente</h4>
+               <h4 class="h4">codigo: 345</h4>
+           </div>
+
+           <div class="coluna_politica">
+               <h4 class="h4">Nome: senhor madruga</h4>
+               <h4 class="h4">cargo: vice-presidente</h4>
+               <h4 class="h4">codigo: 678</h4>
+           </div>
+
+           <div class="coluna_politica">
+               <h4 class="h4">Nome: Capitão Nascimento</h4>
+               <h4 class="h4">cargo: presidente</h4>
+               <h4 class="h4">codigo: 923</h4>
+           </div>
+
+           <div class="coluna_politica">
+               <h4 class="h4">Nome: chaves</h4>
+               <h4 class="h4">cargo: vice-presidente</h4>
+               <h4 class="h4">codigo: 830</h4>
+           </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

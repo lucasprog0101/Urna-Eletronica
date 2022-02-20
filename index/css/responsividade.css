@@ -1,0 +1,35 @@
+@media only screen and (max-width: 500px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    main{
+        height: 139pc;
+    }
+
+    /* painel */
+    #painel{
+        width: 25.9pc;
+        margin-left: 5.8pc;
+        margin-top: 53pc;
+    }
+
+    .nulo{
+        font-size: 3em;
+        left: 20px;
+    }
+
+    #titulo_candidato{
+        font-size: 2em;
+    }
+
+    
+    .button{
+        width: 130px;
+    }
+
+    /* resto do site */
+    #titulo_info_codigo{
+        font-size: 1.5em;
+    }
+}
